@@ -4,7 +4,7 @@ $nim = $_POST['nim'];
 $nama = $_POST['nama'];
 $jk = $_POST['jk'];
 $prodi = $_POST['prodi'];
-$skills = $_POST['skills'];
+$skills = $_POST['skills'] ?? null;
 $domisili = $_POST['domisili'];
 $email = $_POST['email'];
 
@@ -18,6 +18,10 @@ $nilai_skills = [
     'Python' => 30,
     'Java' => 50,
 ];
+
+if ($skills == null) { 
+    $skills = [];
+}
 
 // Menghitung total skor skill
 $skor_skill = 0;
