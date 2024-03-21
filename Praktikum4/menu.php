@@ -9,14 +9,10 @@
                                 Dashboard
                             </a>
                             <a class="nav-link" href="registrasi.php">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <div class="sb-nav-link-icon"><i class="fas fa-pen-to-square"></i></div>
                                 Registrasi
                             </a>
                         </div>
-                    </div>
-                    <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
                     </div>
                 </nav>
             </div>
