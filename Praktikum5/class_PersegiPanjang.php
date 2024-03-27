@@ -1,5 +1,5 @@
 <?php
-class Lingkaran{
+class PersegiPanjang{
     /**
      * Access Modifier:
      * 1. public: properti/method dapat diakses dimanapun
@@ -7,20 +7,31 @@ class Lingkaran{
      * 3. protected: mirip seperti private, tetapi dapat  diakses juga oleh child class
      */
 
-     // properti
-     private $jari;
-     const PHI = 3.14;
+     // properti atau varibel
+     private $panjang;
+     private $lebar;
+    
 
      //method: function yg berada di dalam class
      //constructor: method yang otomatis berjalan ketika objek dibuat
-     public function __construct($r)
+     public function __construct($panjang, $lebar)
     {
-        $this->jari = $r;
+        $this->panjang = $panjang;
+        $this->lebar = $lebar;
     }
     public function getLuas(){
-        return self::PHI * $this->jari * $this->jari;
+        return $this->panjang * $this->lebar;
     }
     public function getKeliling(){
-        return 2 * self::PHI * $this->jari;
+        return 2 * $this->panjang + $this->lebar;
     }
-}
+    }
+
+
+
+
+
+
+
+
+    
